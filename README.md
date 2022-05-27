@@ -9,7 +9,7 @@ Develop a machine learning program to identify when a news source may be produci
 
 The intended application of the project is for use in applying visibility weights in social media.  Using weights produced by this model, social networks can make stories which are highly likely to be fake news less visible.
 ## Live link
-https://say-no-to-fake-news.herokuapp.com/prediction
+https://say-no-to-fake-news.herokuapp.com/
 <br>
 ## Dataset Description
 
