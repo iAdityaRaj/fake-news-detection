@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake News Detection</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+  <body class="bg-stone-50">
+    
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            
+            <span class="ml-3 text-xl">Fake News Detection</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+            
+          </nav>
+         
+        </div>
+      </header>
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="../static/image3.svg" style="height:250px; width:350px;">
+          <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Fake News Detection Prediction Page</h1>
+            <p class="mb-8 leading-relaxed">Predict the news wheteher it is fake or real by entering the news headline below.</p>
+            <br><p class="text-primary"><b>{{result}}</b></p>
+            <form action="/prediction" method="POST">
+            <div class="flex w-full justify-center items-end">
+                <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+                <label for="hero-field" class="leading-7 text-sm text-gray-600">Enter News Headline</label>
+                <input type="text" id="news" name="news" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-red-200 focus:bg-transparent border border-gray-300 focus:border-red-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button type="submit" class="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Submit</button>
+            </div>
+        </form>
+            <p class="text-sm mt-2 text-gray-500 mb-8 w-full">This is a fully fledged fake news detection webapp.</p>
+            
+          </div>
+        </div>
+      </section>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+  </body>
+</html>
